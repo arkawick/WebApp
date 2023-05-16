@@ -1,0 +1,71 @@
+Dataset: quandl >> yfinance/alphavantage
+
+Traditional ml reworks:
+	Confusion matrix
+	Classification report – precision recall f1 support
+	Accuracy Working
+
+Web application issues:
+	Version change issues
+	Running on anaconda prompt        ----- crash 
+	Running on windows command prompt             ----- version change issues
+
+Streamlit backup
+
+webapp rework 
+	dashboard to connect streamlit and flask app
+	deploy if possible 
+
+[ 
+	github - only static
+	heroku - not opening
+	zeet - policy changes
+	firebase - 
+	render -
+	netify - 
+	pythonanywhere - 
+]
+
+Evaluations for Streamlit and Flask Web App
+
+Selection of the closed or the adjusted close price as primary requirement
+
+Feature selection argument 
+	feature selection 
+	feature extraction - PCA
+
+PCA - principal component analysis
+
+NN reworks: LSTM layer composition
+	Choosing the right number of nodes and layers
+
+
+___________________________________________
+
+
+Web application issues: Version change issues:
+
+
+Python modules required for successful execution on anaconda prompt,
+pandas 1.4.4
+tensorflow 2.9.2
+keras 2.9.0
+sklearn
+flask 2.1.2
+flask_cors 3.0.10
+	Running on anaconda prompt        ----- crash 
+
+
+Python modules required for successful execution on command prompt,
+pandas 1.5.3
+tensorflow 2.12.0
+keras 2.12.0rc1
+keras-nightly 2.13.0.dev2023041007
+sklearn 0.0.post1
+flask 2.2.2
+flask_cors 3.0.10
+	Running on windows command prompt             ----- version change issues
+
+
+
+

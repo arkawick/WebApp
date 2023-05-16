@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Stock Price Prediction</title>
+
+        <meta charset="utf-8">
+        <link rel="icon" href="../favicon.ico" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../static/bootstrap.min.css">
+        <script src="../static/jquery.min.js"></script>
+        <script src="../static/bootstrap.min.js"></script>
+
+        <script src="../static/chart.js"></script>
+
+        <link rel="stylesheet" href="../header.css">
+
+        <script>
+        
+            var pages = {
+                "home": "home.html",
+                "training": "training.html",
+                "predictions": "predictions.html"
+            }
+        
+            function changePage(e) {
+                var page = e.getAttribute("page");
+                window.location = pages[page];
+            }
+        
+        </script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 header-title">Stock Price Prediction</div>
+                    <div class="col-sm-8">
+                        <div class="navbar">
+                            <div onclick="changePage(this)" page="home" class="nav-item active">Home</div>
+                            <div onclick="changePage(this)" page="training" class="nav-item">Training</div>
+                            <div onclick="changePage(this)" page="predictions" class="nav-item">Predictions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <link rel="stylesheet" href="./home.css">
+
+            <div class="welcomeBanner">
+                <img class="background" src="../icons/background.jpg" />
+                <div class="text">
+                    <div class="title">Stock Price Prediction</div>
+                    <div class="subtitle"></div>
+                    <div class="subtitle"></div>
+                    <div class="subtitle">
+                        A Final Year Project on Machine Learning<br>
+                        by<br><br>
+                        Arkajyoti Bhattacharyay (10200119050)<br>
+                        Arnab Das (10201619039)<br>
+                        Adrita Dutta (10200119026)<br>
+                        Anik Saha (10200119044)<br><br>
+                        under the guidance of Prof. Deepak Kumar Jha sir
+                    </div>
+                    <div class="subtitle"></div>
+                </div>
+            </div>
+
+            <div class="container-fluid someStocks">
+                <div class="title">Supported Stocks</div>
+                <div class="row">
+                    <div class="col-sm-2"><img class="apple icon" src="../icons/companies/apple.png" /></div>
+                    <div class="col-sm-3"><img class="google icon" src="../icons/companies/google.png" /></div>
+                    <div class="col-sm-3"><img class="microsoft icon" src="../icons/companies/microsoft.png" /></div>
+                    <div class="col-sm-3"><img class="tesla icon" src="../icons/companies/tesla.png" /></div>
+                    <div class="col-sm-3"><img class="nvidia icon" src="../icons/companies/nvidia.png" /></div>
+                    <div class="col-sm-2"><img class="tata icon" src="../icons/companies/tata.png" /></div>
+                    <div class="col-sm-3"><img class="nifty50 icon" src="../icons/companies/nifty50.png" /></div>
+                    <div class="col-sm-3"><img class="reliance icon" src="../icons/companies/reliance.png" /></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+pandas == 1.4.4
+tensorflow == 2.9.2
+keras == 2.12.0rc1
+keras-nightly == 2.13.0.dev2023041007
+sklearn
+flask == 2.1.2
+flask_cors == 3.0.10

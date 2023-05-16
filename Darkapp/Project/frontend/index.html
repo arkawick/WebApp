@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dashboard</title>
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span id="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+    <section id="home">
+        <div class="title-group">
+        <h1>Stock Price Prediction</h1>
+        <h2>
+            <!--<a href="./pages/home.html" target = "_blank">Click to Enter The Flask Web Application</a><br>-->
+            <a href="../../../FinalWebApp/Project/frontend/pages/home.html" target = "_blank">Click to Enter The Flask Web Application</a><br>
+            <br>
+            <a href="http://localhost:8501" target = "_blank">Click to Enter The Streamlit Application</a><br>
+        </h2>
+        <h3>
+            A Final Year Project on Machine Learning<br>
+            by<br><br>
+            Arkajyoti Bhattacharyay (10200119050)<br>
+            Arnab Das (10201619039)<br>
+            Adrita Dutta (10200119026)<br>
+            Anik Saha (10200119044)<br><br>
+            under the guidance of Prof. Deepak Kumar Jha sir
+        </h3>
+      </div>
+    </section>
+    <section id="about">
+        <h2>Flask Web Application</h2>
+        <div class="about-container">
+            <div class="image-container">
+                <h2>Home page</h2>
+                <img src="img/a_light.png" alt="Home page" id="image1">
+            </div>
+            <div class="image-container">
+                <h2>Training page</h2>
+                <img src="img/b_light.png" alt="Training page" id="image2">
+            </div>
+            <div class="image-container">
+                <h2>Predictions page</h2>
+                <img src="img/c_light.png" alt="Predictions page" id="image3">
+            </div>
+        </div>
+
+        <h2>Streamlit Application</h2>
+        <div class="about-container">
+            <div class="image-container">
+                <h2>Stock visualizer</h2>
+                <img src="img/x_light.png" alt="Stock visualizer" id="image4">
+            </div>
+            <div class="image-container">
+                <h2>Stock predictions</h2>
+                <img src="img/y_light.png" alt="Stock predictions" id="image5">
+            </div>
+            <div class="image-container">
+                <h2>Prediction graph</h2>
+                <img src="img/z_light.png" alt="Prediction graph" id="image6">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2>Project Description</h2>
+
+        <div class="text-box" id="text-box">
+            <h3>Overview</h3>
+            <p>
+                Stock market prediction and analysis are some of the most difficult jobs to complete. 
+                There are numerous causes for this, including market volatility and a variety of other 
+                dependent and independent variables that influence the value of a certain stock in the market. 
+                These variables make it extremely difficult for any stock market expert to anticipate the rise 
+                and fall of the market with great precision. However, with the introduction of Machine Learning 
+                and its strong algorithms, the most recent market research and Stock Market Prediction advancements 
+                have begun to include such approaches in analyzing stock market data.
+            </p>
+            <h3>Findings</h3>
+            <p>
+                In this project, we are analyzing adjusting closing stock price of any given organizations’ dataset. In this project entitled “Stock Forecasting Approaches Using Hybrid LSTM Model and Its Comparison Study with Other Existing Models”, we are comparing the prediction of close stock prices using the specified variant of LSTM to the other existing algorithms for time series analysis. We have applied datasets belonging to Google, Apple, Tesla, Nvidia etc. and achieved remarkable accurate predictions for these datasets. 
+                Machine and deep learning-based algorithms are the emerging approaches in addressing prediction problems in time series. These techniques have been shown to produce more accurate results than conventional regression-based modeling. It has been reported that artificial Recurrent Neural Networks (RNN) with memory, such as Long Short-Term Memory (LSTM), are superior compared to Autoregressive Integrated Moving Average (ARIMA) with a large margin. After comparing Traditional Machine Learning Methods, Strictly Time Series Analysis Methods and Deep Learning and Neural Networks, we have come to a conclusion that for this dataset LSTM is the best model so far in these three broad categories of Algorithms.
+                So, by the further comparison of the variants of LSTM, BiLSTM & Hybrid LSTMs in a trial-and-error manner, we tried to find the most accurate combination of layers which will give the best results and the least amount of error. The difference of the errors in the best models of LSTM, BiLSTM & Hybrid LSTM are really negligible but the hybrid LSTM performed better than the other final models.
+                The LSTM-based models incorporate additional “gates” for the purpose of memorizing longer sequences of input data. The major question is that whether the gates incorporated in the LSTM architecture already offers a good prediction and whether additional training of data would be necessary to further improve the prediction. Bidirectional LSTMs (BiLSTMs) enable additional training by traversing the input data twice (i.e., 1) left-to-right, and 2) right-to-left). The question of interest is then whether BiLSTM, with additional training capability, outperforms regular unidirectional LSTM. This paper reports a behavioral analysis and comparison of variants of LSTM models. The objective is to explore to what extend additional layers of training of data would be beneficial to tune the involved parameters. 
+                The results show that additional training of BiLSTM model offers better predictions than regular LSTM-based models (But in our case some LSTM model performed better than BiLSTM which is quite surprising). In this report, Hybrid LSTM is considered to be the best working model.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="social-icons">
+
+            <a href="https://github.com/arkawick/Webapp" target = "_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://mailto:arka4kgec@gmail.com" target = "_blank"><i class="fa-brands fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/arkajyoti-bhattacharyay-84b549191/" target = "_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/919330436509/" target = "_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.reddit.com/user/arkawick/" target = "_blank"><i class="fa-brands fa-reddit"></i></a>
+            <a href="https://www.facebook.com/Arkajyoti%20Bhattacharyay/" target = "_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/arkawick/" target = "_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.google.com/" target = "_blank"><i class="fa-brands fa-tumblr"></i></a>
+            <a href="https://www.google.com/" target = "_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+            <a href="https://www.google.com/" target = "_blank"><i class="fa-brands fa-steam"></i></a>
+            <a href="https://in.pinterest.com/arkawick/" target = "_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.google.com/" target = "_blank"><i class="fa-brands fa-deviantart"></i></a>
+            <a href="https://www.youtube.com/" target = "_blank"><i class="fa-brands fa-youtube"></i></a>            
+            
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="script.js">window.location = "./pages/home.html";</script>
+</body>
+</html>
